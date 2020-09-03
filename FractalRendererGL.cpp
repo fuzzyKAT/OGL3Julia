@@ -39,8 +39,8 @@ FractalRendererGL3::FractalRendererGL3(GLint width, GLint height)
     glViewport(0, 0, width, height);
     
     // Загрузка шейдеров
-    std::string vrtShaderSrc = readFile("../vrtShader.glsl");
-    std::string fgtShaderSrc = readFile("../fgtShader.glsl");
+    std::string vrtShaderSrc = readFile("vrtShader.glsl");
+    std::string fgtShaderSrc = readFile("fgtShader.glsl");
     const char *vrtShaderStr = vrtShaderSrc.c_str();
     const char *fgtShaderStr = fgtShaderSrc.c_str();
     
